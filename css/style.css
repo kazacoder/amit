@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Soroka;
+    src: url('../fonts/SOROKA.ttf');
+}
+
+body {
+    font-family: Soroka, sans-serif;
+}
+
+.header {
+    background: #92A4B0;
+    padding: 20px 46px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header .container {
+
+}
+
+.header-text {
+    font-weight: 400;
+    font-size: 28px;
+    color: #F8F8F8;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 96px;
+    color: #A88A64;
+    text-align: center;
+    margin-top: 135px;
+    margin-bottom: 128px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 60px;
+}
+
+.menu-item {
+    list-style: none;
+    padding-bottom: 6px;
+    border-bottom:  3px solid #92A4B0;
+    box-sizing: border-box;
+}
+
+.menu-item a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #353128;
+}
+
+/*.menu-item:hover, */
+.menu-item.active {
+    border-color: #A88A64;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 60px;
+}
+
+.products .container {
+    max-width: 1440px;
+}
+
+.products-main {
+    border-top: 6px solid #92A4B0;
+    padding: 60px;
+    margin-top: 56px;
+}
+
+.product-item {
+    width: 240px;
+    height: 360px;
+    background: #A88A64;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    transform: scale(1.1);
+}
+
+.product-image {
+    height: 280px;
+}
+
+.product-description {
+
+    width: 100%;
+    height: 80px;
+    background: #92A4B0;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.panel {
+    background: #A88A64;
+
+}
+
+.panel.left {
+    border-radius: 0px 20px 20px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.product-items {
+    display: flex;
+    gap: 120px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.panel.right {
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.products-footer {
+    text-align: center;
+}
+
+.products-footer-text {
+    font-size: 24px;
+    color: #353128;
+}
+
+.products-footer-underline {
+    width: 100%;
+    line-height: 0;
+}
+
+.footer {
+    height: 70px;
+}

@@ -1,0 +1,22 @@
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.ticker {
+
+    overflow: hidden;
+}
+
+.ticker__in {
+    display: flex;
+    width: fit-content;
+    animation: ticker 10s linear infinite;
+    -webkit-transform-style: preserve-3d; /* Фикс возможного глюка с морганием в Сафари */
+}
+
+.ticker__item {
+    padding: .5em .75em;
+    white-space: nowrap;
+    -webkit-backface-visibility: hidden; /* Фикс возможного глюка с морганием в Сафари */
+}
