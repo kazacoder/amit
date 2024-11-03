@@ -19,6 +19,7 @@ body {
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 4;
 }
 
 .container {
@@ -81,6 +82,8 @@ body {
 
 .products .container {
     max-width: 1440px;
+    display: flex;
+    flex-direction: column;
 }
 
 .products-main {
@@ -139,6 +142,8 @@ body {
 
 .products-footer {
     text-align: center;
+    display: inline-block;
+    align-self: center;
 }
 
 .products-footer-text {
@@ -147,8 +152,12 @@ body {
 }
 
 .products-footer-underline {
-    width: 100%;
+
     line-height: 0;
+}
+
+.products-footer-underline svg {
+    width: 100%;
 }
 
 .footer {

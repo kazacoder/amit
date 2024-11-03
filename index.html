@@ -151,9 +151,9 @@
             </div>
         </div>
         <div class="products-footer">
-            <div class="products-footer-text">амит, 2024 - 2025</div>
+            <div class="products-footer-text" id="footer">амит, 2024</div>
             <div class="products-footer-underline">
-                <svg width="276" height="5" viewBox="0 0 276 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="170" height="5" viewBox="0 0 276 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 1.93554C100.436 0.63502 167.89 0.18547 275 4" stroke="#353128"/>
                 </svg>
             </div>
@@ -166,5 +166,15 @@
 
 </footer>
 
+<script>
+    let currentYear = new Date().getFullYear()
+    if (currentYear > 2024) {
+        const footerText = document.getElementById('footer')
+        footerText.innerText += ` - ` + `${currentYear}`.slice(2)
+    }
+</script>
+
 </body>
 </html>
+
+
